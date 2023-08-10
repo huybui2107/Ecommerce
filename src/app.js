@@ -9,16 +9,14 @@ const morgan = require('morgan');
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
+app.use(express.urlencoded({ extended :true}));
+app.use(express.json());
 
 //init db
 require('./dbs/init.mongodb');
 const { checkOverload } = require('./helpers/check.connect');
 // checkOverload();
 // init routes
-app.get('/test',(req, res, next) =>{
-    return res.status(200).json({
-        message : 'Success'
-    })
-})
+app.use('/',require('./routes'));
 
 module.exports = app;
