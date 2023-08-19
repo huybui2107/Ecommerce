@@ -91,6 +91,12 @@ const searchProductByUser = async ({ keySearch }) => {
       new : isNew
      })
    }
+
+   const getProductById = async (productId) =>{
+     return await product.findOne({
+      _id :productId
+     })
+   }
 module.exports = {
     findAllDrafForShop,
     publicProductByShop,
@@ -99,5 +105,6 @@ module.exports = {
     searchProductByUser,
     findAllProduct,
     findProduct,
-    updateProductById
+    updateProductById,
+    getProductById
 }
