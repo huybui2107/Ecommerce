@@ -9,8 +9,9 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Badge, List, ListItem } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ShoppingCart } from '@mui/icons-material';
+import { useAppSelector } from '../store/ConfigureStore';
 
 
 const midLinks = [
@@ -31,7 +32,9 @@ const rightLinks = [
 
 
 function Header() {
+  const { basket } = useAppSelector(state => state.basket)
 
+  const itemCount = basket?.items.reduce((itemCount, item) => itemCount + item.quantity, 0)
 
   return (
     <AppBar position="static" sx={{ marginBottom: 4 }}>
@@ -75,8 +78,8 @@ function Header() {
           </Box>
 
           <Box sx={{ display: 'flex' }}>
-            <IconButton size='large' sx={{ color: 'inherit' }}>
-              <Badge badgeContent={4} color='secondary'>
+            <IconButton component={Link} to="/basket" size='large' sx={{ color: 'inherit' }}>
+              <Badge badgeContent={itemCount} color='secondary'>
                 <ShoppingCart />
               </Badge>
             </IconButton>

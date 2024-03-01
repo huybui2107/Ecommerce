@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 
 axios.defaults.baseURL = "https://localhost:7224/api/";
-
+axios.defaults.withCredentials = true;
 const responseBody = (response: AxiosResponse) => response.data;
 
 axios.interceptors.response.use(
@@ -34,10 +34,17 @@ const TestErrors = {
   get500Error: () => requests.get("bugggy/server-error"),
   getValidateError: () => requests.get("bugggy/validation-error"),
 };
-
+const Basket = {
+  getBasket: () => requests.get("Basket"),
+  addItem: (productId: number, quantity = 1) =>
+    requests.post(`Basket?productId=${productId}&quantity=${quantity}`, {}),
+  removeItem: (productId: number, quantity = 1) =>
+    requests.delete(`Basket?productId=${productId}&quantity=${quantity}`, {}),
+};
 const agent = {
   Catalog,
   TestErrors,
+  Basket,
 };
 
 export default agent;
