@@ -1,4 +1,5 @@
 ﻿using BE.Databases.Entities;
+using System.Runtime.CompilerServices;
 
 namespace BE.Extensions
 {
@@ -23,6 +24,29 @@ namespace BE.Extensions
             var lowerCaseSearchTerm = searchTerm.Trim().ToLower();
 
             return query.Where(p => p.Name.ToLower().Contains(lowerCaseSearchTerm));
+        }
+
+        public static IQueryable<Product> Filter(this IQueryable<Product> query, string brands, string types)
+        {
+
+
+            var brandList = new List<string>();
+            var typesList = new List<string>();
+
+            if (!string.IsNullOrEmpty(brands))
+            {
+                brandList.AddRange(brands.ToLower().Split(',').ToList());
+            }
+            if (!string.IsNullOrEmpty(types))
+            {
+                typesList.AddRange(types.ToLower().Split(',').ToList());
+            }
+
+            query = query.Where(p => brandList.Count == 0 || brandList.Contains(p.Brand.ToLower()));
+            query = query.Where(p => typesList.Count == 0 || typesList.Contains(p.Type.ToLower()));
+
+            return query;
+
         }
     }
 }

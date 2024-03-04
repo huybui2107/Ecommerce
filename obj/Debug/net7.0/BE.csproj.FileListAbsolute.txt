@@ -49,3 +49,4 @@ D:\Project\Ecommerce\BE\bin\Debug\net7.0\MySqlConnector.dll
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\System.CodeDom.dll
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\Ecommerce\BE\obj\Debug\net7.0\BE.sourcelink.json
