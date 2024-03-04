@@ -1,6 +1,10 @@
 import { createEntityAdapter, createSlice } from "@reduxjs/toolkit";
 import { Product } from "../../Interfaces/IProduct";
-import { fetchProductAsync, fetchProductsAsync } from "./catalogThunk";
+import {
+  fetchFilter,
+  fetchProductAsync,
+  fetchProductsAsync,
+} from "./catalogThunk";
 import { RootState } from "@reduxjs/toolkit/query";
 
 const productsAdapter = createEntityAdapter<Product>();
@@ -9,7 +13,10 @@ export const catalogSlice = createSlice({
   name: "catalog",
   initialState: productsAdapter.getInitialState({
     productsLoaded: false,
+    filtersLoaded: false,
     status: "idle",
+    brands: [],
+    types: [],
   }),
   reducers: {},
   extraReducers: (builder) => {
@@ -33,6 +40,21 @@ export const catalogSlice = createSlice({
       state.status = "idle";
     });
     builder.addCase(fetchProductAsync.rejected, (state, action) => {
+      console.log(action);
+      state.status = "idle";
+    });
+
+    //==========
+    builder.addCase(fetchFilter.pending, (state) => {
+      state.status = "pendingFetchFilter";
+    });
+    builder.addCase(fetchFilter.fulfilled, (state, action) => {
+      state.brands = action.payload.brands;
+      state.types = action.payload.types;
+      state.filtersLoaded = true;
+      state.status = "idle";
+    });
+    builder.addCase(fetchFilter.rejected, (state, action) => {
       console.log(action);
       state.status = "idle";
     });

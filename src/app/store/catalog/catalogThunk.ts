@@ -23,3 +23,14 @@ export const fetchProductAsync = createAsyncThunk<Product, number>(
     }
   }
 );
+
+export const fetchFilter = createAsyncThunk(
+  "catalog/fetchFilter",
+  async (_, thunkAPI) => {
+    try {
+      return await agent.Catalog.filter();
+    } catch (error: any) {
+      return thunkAPI.rejectWithValue({ error: error.data });
+    }
+  }
+);

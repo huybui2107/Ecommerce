@@ -12,7 +12,7 @@ export default function ProductList({ products }: Props) {
     return (
         <Grid container spacing={2}>
             {products.map(product => (
-                <Grid item lg={3} key={product.id}>
+                <Grid item lg={4} key={product.id}>
                     <ProductCard product={product} />
                 </Grid>
             ))}
