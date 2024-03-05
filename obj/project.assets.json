@@ -1792,32 +1792,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Heaton\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HUY BUI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Ecommerce\\BE\\BE.csproj",
+      "projectUniqueName": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\BE.csproj",
       "projectName": "BE",
-      "projectPath": "D:\\Project\\Ecommerce\\BE\\BE.csproj",
-      "packagesPath": "C:\\Users\\Heaton\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Ecommerce\\BE\\obj\\",
+      "projectPath": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\BE.csproj",
+      "packagesPath": "C:\\Users\\HUY BUI\\.nuget\\packages\\",
+      "outputPath": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Heaton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\HUY BUI\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1892,7 +1884,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
