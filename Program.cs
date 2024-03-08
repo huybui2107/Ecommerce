@@ -1,5 +1,7 @@
 using BE.Databases;
+using BE.Databases.Entities;
 using BE.Middleware;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,15 @@ services.AddSwaggerGen();
 services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOrigin()
     .AllowAnyHeader().AllowAnyMethod()));
 
+//indentity
+
+//services.AddIdentityCore<User>()
+ //   .AddRoles<IdentityRole>()
+  //  .AddEntityFrameworkStores<DbContext>();
+
+services.AddAuthentication();
+services.AddAuthorization();
+
 // connect Mysql
 var connectionString = builder.Configuration.GetConnectionString("Default");
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 34));
@@ -24,6 +35,7 @@ services.AddDbContext<DataContext>(options => options
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors()
 );
+
 
 var app = builder.Build();
 
