@@ -1,10 +1,14 @@
 
-import { Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Grid, Pagination, Paper, Radio, RadioGroup, TextField, Typography } from "@mui/material";
+import { Box, Grid, Pagination, Paper } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../app/store/ConfigureStore";
-import { productSelectors } from "../../app/store/catalog/catalogSlice";
+import { productSelectors, setProductParams } from "../../app/store/catalog/catalogSlice";
 import { fetchFilter, fetchProductsAsync } from "../../app/store/catalog/catalogThunk";
 import ProductList from "./ProductList";
 import { useEffect } from "react";
+import ProductSearch from "./ProductSearch";
+import RadioButtonGroup from "../../app/components/RadioButtonGroup";
+import CheckboxButton from "../../app/components/CheckboxButton";
+import AppPagination from "../../app/components/AppPagination";
 
 const sortOptions = [
   { value: "name", label: 'Alphabetical' },
@@ -16,7 +20,7 @@ export default function Catalog() {
 
   // const [products, setProducts] = useState<Product[]>([])
   const products = useAppSelector(productSelectors.selectAll);
-  const { productsLoaded, filtersLoaded, brands, types } = useAppSelector(state => state.catalog);
+  const { productsLoaded, filtersLoaded, brands, types, productParams, metaData } = useAppSelector(state => state.catalog);
   const dispatch = useAppDispatch();
   useEffect(() => {
     // agent.Catalog.list().then(products => setProducts(products))
@@ -30,48 +34,36 @@ export default function Catalog() {
       dispatch(fetchFilter());
     }
   }, [dispatch, filtersLoaded])
+  if (!metaData) return <div> Error...</div>
 
   return (
     <Grid container spacing={4}>
       <Grid item xs={3}>
         <Paper sx={{ mb: 2 }}>
-          <TextField
-            label='Search products'
-            variant='outlined'
-            fullWidth
+          <ProductSearch />
+        </Paper>
+        <Paper sx={{ mb: 2, p: 2 }}>
+          <RadioButtonGroup
+            selectedValue={productParams.orderBy}
+            options={sortOptions}
+            onChange={(e) => dispatch(setProductParams({ orderBy: e.target.value }))}
           />
         </Paper>
         <Paper sx={{ mb: 2, p: 2 }}>
-          <FormControl>
-            <RadioGroup
-              aria-labelledby="demo-radio-buttons-group-label"
-              defaultValue="female"
-              name="radio-buttons-group"
-            >
-              {sortOptions.map(({ value, label }) => (
-                <FormControlLabel value={value} control={<Radio />} label={label} key={value} />
-              ))}
+          <CheckboxButton
+            items={brands}
+            checked={productParams.brands}
+            onChange={(items: string[]) => dispatch(setProductParams({ brands: items }))}
+          />
 
-
-            </RadioGroup>
-          </FormControl>
-        </Paper>
-        <Paper sx={{ mb: 2, p: 2 }}>
-          <FormGroup>
-            {brands.map(brand => (
-              <FormControlLabel control={<Checkbox />} label={brand} key={brand} />
-            ))}
-
-          </FormGroup>
         </Paper>
 
         <Paper sx={{ p: 2 }}>
-          <FormGroup>
-            {types.map(type => (
-              <FormControlLabel control={<Checkbox />} label={type} key={type} />
-            ))}
-
-          </FormGroup>
+          <CheckboxButton
+            items={types}
+            checked={productParams.types}
+            onChange={(items: string[]) => dispatch(setProductParams({ types: items }))}
+          />
         </Paper>
 
       </Grid>
@@ -80,16 +72,12 @@ export default function Catalog() {
       </Grid>
       <Grid item xs={3} />
       <Grid item xs={9}>
-        <Box display='flex' justifyContent='center' alignItems='center'>
-          <Pagination
-            color="secondary"
-            size="large"
-            count={10}
-            page={2}
-          />
-        </Box>
-      </Grid>
+        <AppPagination
+          metaData={metaData}
+          onPageChange={(page: number) => dispatch(setProductParams({ pageNumber: page }))}
 
+        />
+      </Grid>
 
 
     </Grid>

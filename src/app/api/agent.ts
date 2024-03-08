@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
+import { PaginatedResonse } from "../Interfaces/IPagination";
 
 axios.defaults.baseURL = "https://localhost:7224/api/";
 axios.defaults.withCredentials = true;
@@ -6,6 +7,14 @@ const responseBody = (response: AxiosResponse) => response.data;
 
 axios.interceptors.response.use(
   (response) => {
+    const pagination = response.headers["pagination"];
+    if (pagination) {
+      response.data = new PaginatedResonse(
+        response.data,
+        JSON.parse(pagination)
+      );
+      return response;
+    }
     return response;
   },
   (error: AxiosError) => {
@@ -15,7 +24,8 @@ axios.interceptors.response.use(
 );
 
 const requests = {
-  get: (url: string) => axios.get(url).then(responseBody),
+  get: (url: string, params?: URLSearchParams) =>
+    axios.get(url, { params }).then(responseBody),
   post: (url: string, body: object) => axios.post(url, body).then(responseBody),
   put: (url: string, body: object) => axios.put(url, body).then(responseBody),
   delete: (url: string, body: object) =>
@@ -23,7 +33,7 @@ const requests = {
 };
 
 const Catalog = {
-  list: () => requests.get("Product"),
+  list: (params: URLSearchParams) => requests.get("Product", params),
   detail: (id: number) => requests.get(`Product/${id}`),
   filter: () => requests.get(`Product/filters`),
 };

@@ -1,24 +1,55 @@
 import { createEntityAdapter, createSlice } from "@reduxjs/toolkit";
-import { Product } from "../../Interfaces/IProduct";
+import { Product, ProductParams } from "../../Interfaces/IProduct";
 import {
   fetchFilter,
   fetchProductAsync,
   fetchProductsAsync,
 } from "./catalogThunk";
 import { RootState } from "@reduxjs/toolkit/query";
+import { MetaData } from "../../Interfaces/IPagination";
+
+interface CatalogState {
+  productsLoaded: boolean;
+  filtersLoaded: boolean;
+  status: string;
+  brands: string[];
+  types: string[];
+  productParams: ProductParams;
+  metaData: MetaData | null;
+}
+const initParams = () => {
+  return {
+    orderBy: "name",
+    pageNumber: 1,
+    pageSize: 10,
+  };
+};
 
 const productsAdapter = createEntityAdapter<Product>();
 
 export const catalogSlice = createSlice({
   name: "catalog",
-  initialState: productsAdapter.getInitialState({
+  initialState: productsAdapter.getInitialState<CatalogState>({
     productsLoaded: false,
     filtersLoaded: false,
     status: "idle",
     brands: [],
     types: [],
+    productParams: initParams(),
+    metaData: null,
   }),
-  reducers: {},
+  reducers: {
+    setProductParams: (state, action) => {
+      state.productsLoaded = false;
+      state.productParams = { ...state.productParams, ...action.payload };
+    },
+    setMetaData: (state, action) => {
+      state.metaData = action.payload;
+    },
+    resetProductParams: (state) => {
+      state.productParams = initParams();
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchProductsAsync.pending, (state) => {
       state.status = "pendingFetchProducts";
@@ -64,3 +95,6 @@ export const catalogSlice = createSlice({
 export const productSelectors = productsAdapter.getSelectors(
   (state: RootState) => state.catalog
 );
+
+export const { setProductParams, resetProductParams, setMetaData } =
+  catalogSlice.actions;
