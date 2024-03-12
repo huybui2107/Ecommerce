@@ -1,5 +1,5 @@
 
-import { Box, Grid, Pagination, Paper } from "@mui/material";
+import { Grid, Paper } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../app/store/ConfigureStore";
 import { productSelectors, setProductParams } from "../../app/store/catalog/catalogSlice";
 import { fetchFilter, fetchProductsAsync } from "../../app/store/catalog/catalogThunk";
