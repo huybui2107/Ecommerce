@@ -1,9 +1,18 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { PaginatedResonse } from "../Interfaces/IPagination";
+import { store } from "../store/ConfigureStore";
 
 axios.defaults.baseURL = "https://localhost:7224/api/";
 axios.defaults.withCredentials = true;
 const responseBody = (response: AxiosResponse) => response.data;
+
+axios.interceptors.request.use((config) => {
+  const token = store.getState().account.user?.token;
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
 
 axios.interceptors.response.use(
   (response) => {
@@ -56,7 +65,7 @@ const Basket = {
 const Account = {
   login: (values: any) => requests.post(`Account/login`, values),
   register: (values: any) => requests.post(`Account/register`, values),
-  currentUser: (values: any) => requests.get(`Account/currentUser`, values),
+  currentUser: () => requests.get(`Account/currentUser`),
 };
 const agent = {
   Catalog,

@@ -12,8 +12,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FieldValues, useForm } from 'react-hook-form';
-import agent from '../../app/api/agent';
 import { LoadingButton } from '@mui/lab';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { signInUser } from '../../app/store/account/accountThunk';
 
 
 
@@ -21,8 +23,9 @@ import { LoadingButton } from '@mui/lab';
 const defaultTheme = createTheme();
 
 export default function Login() {
-
-    const { register, handleSubmit, formState: { isSubmitting } } = useForm();
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const { register, handleSubmit, formState: { isSubmitting, errors } } = useForm();
     // const [values, setValuess] = useState({
     //     username: '',
     //     password: '',
@@ -36,7 +39,14 @@ export default function Login() {
     //     setValuess({ ...values, [name]: value });
     // }
     const submitForm = async (data: FieldValues) => {
-        agent.Account.login(data)
+        try {
+            // await agent.Account.login(data)
+            await dispatch(signInUser(data));
+            navigate('/catalog');
+
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (
@@ -66,7 +76,9 @@ export default function Login() {
                             label="User name"
                             autoComplete="username"
                             autoFocus
-                            {...register('username')}
+                            {...register('username', { required: 'Username is required' })}
+                            error={!!errors.username}
+                            helperText={errors?.username?.message}
                         />
                         <TextField
                             margin="normal"
@@ -76,7 +88,9 @@ export default function Login() {
                             type="password"
                             id="password"
                             autoComplete="current-password"
-                            {...register('password')}
+                            {...register('password', { required: 'Password is required' })}
+                            error={!!errors.password}
+                            helperText={errors?.password?.message}
                         />
                         <FormControlLabel
                             control={<Checkbox value="remember" color="primary" />}

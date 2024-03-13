@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { Basket } from "../../Interfaces/IBasket";
 import agent from "../../api/agent";
+import { getCookie } from "../../utils/util";
 
 export const addBasketItemAsync = createAsyncThunk<
   Basket,
@@ -23,3 +25,19 @@ export const removeBasketItemAsync = createAsyncThunk<
     console.log(error);
   }
 });
+
+export const fetchBasketAsync = createAsyncThunk<Basket>(
+  "basket/fetchBasketAsync",
+  async (_, thunkAPI) => {
+    try {
+      return await agent.Basket.getBasket();
+    } catch (err: any) {
+      return thunkAPI.rejectWithValue({ error: err.data });
+    }
+  },
+  {
+    condition: () => {
+      if (!getCookie("buyerId")) return false;
+    },
+  }
+);
