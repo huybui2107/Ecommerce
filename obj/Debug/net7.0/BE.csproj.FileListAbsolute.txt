@@ -107,3 +107,4 @@ D:\Project\Ecommerce\BE\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFra
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Project\Ecommerce\BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\Project\Ecommerce\BE\bin\Debug\net7.0\Databases\productData.json

@@ -54,8 +54,15 @@ services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOr
 //indentity
 
 
-services.AddIdentity<User, IdentityRole>()
-  .AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+//services.AddIdentity<User, Role>()
+//  .AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+
+services.AddIdentityCore<User>(opt =>
+{
+    opt.User.RequireUniqueEmail = true;
+})
+    .AddRoles<Role>()
+    .AddEntityFrameworkStores<DataContext>();
 
 
 services.AddScoped<TokenService>();

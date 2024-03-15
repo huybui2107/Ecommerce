@@ -1,4 +1,5 @@
 ﻿using BE.Databases.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 
 namespace BE.Extensions
@@ -47,6 +48,12 @@ namespace BE.Extensions
 
             return query;
 
+        }
+
+        public static IQueryable<Basket> RetrieveBasketWithItems(this IQueryable<Basket> query, string buyerId)
+        {
+            return query.Include(i => i.Items).ThenInclude(p => p.Product)
+                .Where(b => b.BuyerId == buyerId);
         }
     }
 }
