@@ -22,30 +22,42 @@ namespace BE.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Order>>> GetOrders()
+        public async Task<ActionResult<List<OrderDto>>> GetOrders()
         {
-            return await _context.orders
+            /*return await _context.orders
                 .Include(o => o.Items)
+                .Where(x => x.BuyerId == User.Identity.Name)
+                .ToListAsync();*/
+            return await _context.orders
+                .ProjectOrderToOrderDto()
                 .Where(x => x.BuyerId == User.Identity.Name)
                 .ToListAsync();
         }
 
-        [HttpGet("{id", Name = "GetOrder")]
-        public async Task<ActionResult<Order>> GetOrder(int id)
+        [HttpGet("{id}", Name = "GetOrder")]
+        public async Task<ActionResult<OrderDto>> GetOrder(int id)
         {
-            return await _context.orders
-                .Include(o => o.Items)
+            //var order = await _context.orders
+            //    .Include(o => o.Items)
+            //    .Where(x => x.BuyerId == User.Identity.Name && x.Id == id)
+            //    .FirstOrDefaultAsync();
+
+            var order = await _context.orders
+                .ProjectOrderToOrderDto()
                 .Where(x => x.BuyerId == User.Identity.Name && x.Id == id)
                 .FirstOrDefaultAsync();
+            if (order is null) return NotFound("No have any order");
+            return Ok(order);
         }
         [HttpPost]
 
         public async Task<ActionResult<int>> CreateOrder(CreateOrderDto orderDto)
         {
+
             var basket = await _context.Baskets
                 .RetrieveBasketWithItems(User.Identity.Name)
                 .FirstOrDefaultAsync();
-
+            Console.WriteLine("te st" + User.Identity);
             if (basket == null) return BadRequest(new ProblemDetails { Title = "Could not locate basket" });
 
             var items = new List<OrderItem>();
@@ -103,7 +115,7 @@ namespace BE.Controllers
 
             if (result) return CreatedAtRoute("GetOrder", new { id = order.Id }, order.Id);
 
-            return BadRequest("")
+            return BadRequest("Problem creating order");
         }
     }
 }

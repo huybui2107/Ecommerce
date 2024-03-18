@@ -1,6 +1,7 @@
 ﻿using BE.Databases;
 using BE.Databases.Entities;
 using BE.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,11 +18,10 @@ namespace BE.Controllers
         {
             _context = context;
         }
-
+        [Authorize]
         [HttpGet(Name = "GetBasket")]
         public async Task<ActionResult<BasketDto>> GetBasket()
         {
-            var test = Request.Cookies["buyerId"];
             var basket = await _context.Baskets
                              .Include(i => i.Items)
                              .ThenInclude(item => item.Product)
@@ -75,16 +75,20 @@ namespace BE.Controllers
         }
         private Basket CreateBasket()
         {
-            var buyerId = Guid.NewGuid().ToString();
-            var cookieOptions = new CookieOptions
+            var buyerId = User.Identity?.Name;
+            if(string.IsNullOrEmpty(buyerId))
             {
-                HttpOnly = false,
-                IsEssential = true,
-                Expires = DateTime.Now.AddDays(30),
-                Secure = true, // Nếu sử dụng HTTPS
-                SameSite = SameSiteMode.None
-            };
-            Response.Cookies.Append("buyerId", buyerId, cookieOptions);
+                var cookieOptions = new CookieOptions
+                {
+                    HttpOnly = false,
+                    IsEssential = true,
+                    Expires = DateTime.Now.AddDays(30),
+                    Secure = true, // Nếu sử dụng HTTPS
+                    SameSite = SameSiteMode.None
+                };
+                Response.Cookies.Append("buyerId", buyerId, cookieOptions);
+            }
+            
 
             var basket = new Basket { BuyerId = buyerId };
             _context.Baskets.Add(basket);
