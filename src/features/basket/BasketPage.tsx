@@ -12,11 +12,13 @@ import { LoadingButton } from '@mui/lab';
 import BasketSummary from './BasketSummary';
 import { useAppDispatch, useAppSelector } from '../../app/store/ConfigureStore';
 import { addBasketItemAsync, removeBasketItemAsync } from '../../app/store/basket/basketThunk';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function BasketPage() {
     const { basket, status } = useAppSelector(state => state.basket)
     const dispatch = useAppDispatch();
+    const navigate = useNavigate();
     // const [status, setStatus] = useState({
     //     loading: false,
     //     name: '',
@@ -103,6 +105,7 @@ export default function BasketPage() {
                         variant="contained"
                         color="primary"
                         sx={{ mt: 1, }}
+                        onClick={() => navigate('/checkout')}
                     >Checkout</Button>
                 </Box>
             </Box>
