@@ -1,0 +1,711 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|e:\\code_project\\dotnet\\ecommerce\\be\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|e:\\code_project\\dotnet\\ecommerce\\be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|e:\\code_project\\dotnet\\ecommerce\\be\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\extensions\\orderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:extensions\\orderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\basketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\basketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\orderaggregate\\productitemordered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\orderaggregate\\productitemordered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\orderaggregate\\shippingaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\orderaggregate\\shippingaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\buggycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\buggycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\requesthelpers\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:requesthelpers\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\requesthelpers\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:requesthelpers\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\requesthelpers\\metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:requesthelpers\\metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\extensions\\httpextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:extensions\\httpextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\orderaggregate\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\orderaggregate\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\useraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\useraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\migrations\\20240315042629_orderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\migrations\\20240315042629_orderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\productparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\productparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\dtos\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:dtos\\basketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\databases\\entities\\basketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:databases\\entities\\basketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|E:\\Code_Project\\DotNet\\Ecommerce\\BE\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6200EF-9279-41B4-A8F8-685A0A692D82}|BE.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAF8AAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T15:37:37.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-03-19T15:05:37.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-18T15:11:21.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-18T15:05:45.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderExtension.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\OrderExtension.cs",
+              "RelativeDocumentMoniker": "Extensions\\OrderExtension.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\OrderExtension.cs",
+              "RelativeToolTip": "Extensions\\OrderExtension.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwC0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BasketController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Controllers\\BasketController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAIwFgAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\OrderDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "DTOs\\OrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\OrderItemDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\OrderItemDto.cs",
+              "RelativeToolTip": "DTOs\\OrderItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\Order.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\OrderAggregate\\Order.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\Order.cs",
+              "RelativeToolTip": "Databases\\Entities\\OrderAggregate\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BasketDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\BasketDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\BasketDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\BasketDto.cs",
+              "RelativeToolTip": "DTOs\\BasketDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BuggyController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BuggyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BuggyController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BuggyController.cs",
+              "RelativeToolTip": "Controllers\\BuggyController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\OrderAggregate\\OrderItem.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\OrderItem.cs",
+              "RelativeToolTip": "Databases\\Entities\\OrderAggregate\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseApiController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "Controllers\\BaseApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductExtensions.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\ProductExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\ProductExtensions.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\ProductExtensions.cs",
+              "RelativeToolTip": "Extensions\\ProductExtensions.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Address.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\Address.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Address.cs",
+              "RelativeToolTip": "Databases\\Entities\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ShippingAddress.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\ShippingAddress.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\OrderAggregate\\ShippingAddress.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\ShippingAddress.cs",
+              "RelativeToolTip": "Databases\\Entities\\OrderAggregate\\ShippingAddress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductItemOrdered.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\ProductItemOrdered.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\OrderAggregate\\ProductItemOrdered.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\ProductItemOrdered.cs",
+              "RelativeToolTip": "Databases\\Entities\\OrderAggregate\\ProductItemOrdered.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PaginationParams.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\PaginationParams.cs",
+              "RelativeDocumentMoniker": "RequestHelpers\\PaginationParams.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\PaginationParams.cs",
+              "RelativeToolTip": "RequestHelpers\\PaginationParams.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PagedList.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\PagedList.cs",
+              "RelativeDocumentMoniker": "RequestHelpers\\PagedList.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\PagedList.cs",
+              "RelativeToolTip": "RequestHelpers\\PagedList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MetaData.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\MetaData.cs",
+              "RelativeDocumentMoniker": "RequestHelpers\\MetaData.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\RequestHelpers\\MetaData.cs",
+              "RelativeToolTip": "RequestHelpers\\MetaData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HttpExtensions.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\HttpExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\HttpExtensions.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Extensions\\HttpExtensions.cs",
+              "RelativeToolTip": "Extensions\\HttpExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateOrderDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\CreateOrderDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateOrderDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\CreateOrderDto.cs",
+              "RelativeToolTip": "DTOs\\CreateOrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\User.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\User.cs",
+              "RelativeToolTip": "Databases\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\OrderAggregate\\OrderStatus.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\OrderAggregate\\OrderStatus.cs",
+              "RelativeToolTip": "Databases\\Entities\\OrderAggregate\\OrderStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserAddress.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\UserAddress.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\UserAddress.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\UserAddress.cs",
+              "RelativeToolTip": "Databases\\Entities\\UserAddress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20240315042629_OrderEntity.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Migrations\\20240315042629_OrderEntity.cs",
+              "RelativeDocumentMoniker": "Databases\\Migrations\\20240315042629_OrderEntity.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Migrations\\20240315042629_OrderEntity.cs",
+              "RelativeToolTip": "Databases\\Migrations\\20240315042629_OrderEntity.cs",
+              "ViewState": "AQIAAFoBAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\Role.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Role.cs",
+              "RelativeToolTip": "Databases\\Entities\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\DataContext.cs",
+              "RelativeDocumentMoniker": "Databases\\DataContext.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\DataContext.cs",
+              "RelativeToolTip": "Databases\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\Product.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Product.cs",
+              "RelativeToolTip": "Databases\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "DTOs\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T14:13:25.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Databases\\DbInitializer.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\DbInitializer.cs",
+              "RelativeToolTip": "Databases\\DbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Basket.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Basket.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\Basket.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\Basket.cs",
+              "RelativeToolTip": "Databases\\Entities\\Basket.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BasketItemDto.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\BasketItemDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\BasketItemDto.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\BasketItemDto.cs",
+              "RelativeToolTip": "DTOs\\BasketItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ProductParams.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\ProductParams.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProductParams.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\DTOs\\ProductParams.cs",
+              "RelativeToolTip": "DTOs\\ProductParams.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "BasketItem.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\BasketItem.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\BasketItem.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Databases\\Entities\\BasketItem.cs",
+              "RelativeToolTip": "Databases\\Entities\\BasketItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\Code_Project\\DotNet\\Ecommerce\\BE\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:13:25.797Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

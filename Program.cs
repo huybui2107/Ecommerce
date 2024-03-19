@@ -93,7 +93,7 @@ services.AddAuthorization();
 var connectionString = builder.Configuration.GetConnectionString("Default");
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 34));
 services.AddDbContext<DataContext>(options => options
-    .UseMySql(connectionString, serverVersion)
+    .UseMySql(connectionString, serverVersion , builder => builder.EnableRetryOnFailure())
     .LogTo(Console.WriteLine, LogLevel.Information)
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors()
