@@ -15,6 +15,7 @@ const AppTextInput = (props: Props) => {
             variant='outlined'
             error={!!fieldState.error}
             helperText={fieldState.error?.message}
+            sx={{ width: '100%' }}
         />
     )
 }

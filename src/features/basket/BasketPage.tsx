@@ -1,23 +1,14 @@
 
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 import { Box, Button, Typography } from '@mui/material';
-import { Add, Delete, Remove } from '@mui/icons-material';
-import { LoadingButton } from '@mui/lab';
 import BasketSummary from './BasketSummary';
-import { useAppDispatch, useAppSelector } from '../../app/store/ConfigureStore';
-import { addBasketItemAsync, removeBasketItemAsync } from '../../app/store/basket/basketThunk';
+import { useAppSelector } from '../../app/store/ConfigureStore';
 import { useNavigate } from 'react-router-dom';
+import BasketTable from './BasketTable';
 
 
 export default function BasketPage() {
-    const { basket, status } = useAppSelector(state => state.basket)
-    const dispatch = useAppDispatch();
+    const { basket } = useAppSelector(state => state.basket)
+
     const navigate = useNavigate();
     // const [status, setStatus] = useState({
     //     loading: false,
@@ -56,48 +47,7 @@ export default function BasketPage() {
     if (!basket) return <Typography variant='h3'>Your basket is empty</Typography>
     return (
         <>
-            <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell >Product</TableCell>
-                            <TableCell align="center">Price</TableCell>
-                            <TableCell align="center" >Quantity</TableCell>
-                            <TableCell align="center">Subtotal</TableCell>
-                            <TableCell align="center"></TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {basket.items.map((row) => (
-                            <TableRow
-                                key={row.productId}
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-                                <TableCell component="th" scope="row">
-                                    {row.name}
-                                </TableCell>
-                                <TableCell align="center">${(row.price / 100).toFixed(2)}</TableCell>
-
-                                <TableCell align="center">
-                                    <LoadingButton onClick={() => dispatch(removeBasketItemAsync({ productId: row.productId, quantity: 1, name: 'rem' }))} loading={status === 'pendingRemoveItem' + row?.productId + 'rem'} color='error'>
-                                        <Remove />
-                                    </LoadingButton>
-                                    {row.quantity}
-                                    <LoadingButton loading={status === 'pendingAddItem' + row?.productId} onClick={() => dispatch(addBasketItemAsync({ productId: row.productId }))} color='secondary'>
-                                        <Add />
-                                    </LoadingButton>
-                                </TableCell>
-                                <TableCell align="center">${(((row.price / 100)) * row.quantity).toFixed(2)}</TableCell>
-                                <TableCell align="center">
-                                    <LoadingButton loading={status === 'pendingRemoveItem' + row?.productId + 'del'} color='error' onClick={() => dispatch(removeBasketItemAsync({ productId: row.productId, quantity: row.quantity, name: 'del' }))}>
-                                        <Delete />
-                                    </LoadingButton>
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+            <BasketTable items={basket.items} />
             <Box display='flex' justifyContent='flex-end' >
                 <Box display='flex' flexDirection='column'>
                     <BasketSummary />

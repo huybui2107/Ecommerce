@@ -12,7 +12,7 @@ export default function BasketSummary() {
 
 
     return (
-        <TableContainer component={Paper} sx={{ mt: 0.5, width: 400, }}>
+        <TableContainer component={Paper} sx={{ mt: 0.5, width: 400, backgroundColor: 'white' }} >
             <Table sx={{}}>
                 <TableBody>
 
@@ -29,7 +29,7 @@ export default function BasketSummary() {
                         <TableCell align="right">{currencyFormat(subTotal + deliveryFee)}</TableCell>
                     </TableRow>
                     <TableRow>
-                        <TableCell align="center">*Order over $100 quantity for free delivery</TableCell>
+                        <TableCell align="center" colSpan={2} >*Order over $100 quantity for free delivery</TableCell>
                     </TableRow>
 
                 </TableBody>
