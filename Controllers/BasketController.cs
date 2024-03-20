@@ -18,15 +18,15 @@ namespace BE.Controllers
         {
             _context = context;
         }
-        [Authorize]
+
         [HttpGet(Name = "GetBasket")]
         public async Task<ActionResult<BasketDto>> GetBasket()
         {
             var basket = await _context.Baskets
                              .Include(i => i.Items)
                              .ThenInclude(item => item.Product)
-                                      .FirstOrDefaultAsync(u => u.BuyerId == Request.Cookies["buyerId"]);
-
+                             .FirstOrDefaultAsync(i => i.BuyerId == User.Identity.Name);
+            Console.WriteLine(User.Identity.Name);
             if (basket == null) { return NotFound("basket not found"); }
             return MapBasketDto(basket);
 
@@ -38,7 +38,7 @@ namespace BE.Controllers
             var basket = await _context.Baskets
                              .Include(i => i.Items)
                              .ThenInclude(item => item.Product)
-                             .FirstOrDefaultAsync(u => u.BuyerId == Request.Cookies["buyerId"]);
+                             .FirstOrDefaultAsync(u => u.BuyerId == User.Identity.Name);
 
             if (basket == null) basket = CreateBasket();
 
@@ -62,7 +62,7 @@ namespace BE.Controllers
             var basket = await _context.Baskets
                             .Include(i => i.Items)
                             .ThenInclude(p => p.Product)
-                            .FirstOrDefaultAsync(u => u.BuyerId == Request.Cookies["buyerId"]);
+                            .FirstOrDefaultAsync(u => u.BuyerId == User.Identity.Name);
 
             if (basket == null) return NotFound("Basket not found");
 
@@ -76,7 +76,7 @@ namespace BE.Controllers
         private Basket CreateBasket()
         {
             var buyerId = User.Identity?.Name;
-            if(string.IsNullOrEmpty(buyerId))
+            if (string.IsNullOrEmpty(buyerId))
             {
                 var cookieOptions = new CookieOptions
                 {
@@ -88,7 +88,7 @@ namespace BE.Controllers
                 };
                 Response.Cookies.Append("buyerId", buyerId, cookieOptions);
             }
-            
+
 
             var basket = new Basket { BuyerId = buyerId };
             _context.Baskets.Add(basket);
