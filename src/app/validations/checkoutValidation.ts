@@ -12,18 +12,18 @@ export const validationSchema = [
   }),
   yup.object({}),
   yup.object({
-    cardNumber: yup
-      .string()
-      .required("Card number is required")
-      .max(16, "Card number must be at most 16 digits long"),
-    cvv: yup
-      .string()
-      .required("CVV is required")
-      .max(3, "CVV must be at most 3 digits long"),
-    expireDate: yup
-      .string()
-      .required("Expire date is required")
-      .max(4, "Expiration date must be in MM/YY format"),
-    nameOnCard: yup.string().required("Name on card date is required"),
+    // cardNumber: yup
+    //   .string()
+    //   .required("Card number is required")
+    //   .max(10, "Card number must be at most 16 digits long"),
+    // cvv: yup
+    //   .string()
+    //   .required("CVV is required")
+    //   .max(3, "CVV must be at most 3 digits long"),
+    // expireDate: yup
+    //   .string()
+    //   .required("Expire date is required")
+    //   .max(4, "Expiration date must be in MM/YY format"),
+    // nameOnCard: yup.string().required("Name on card date is required"),
   }),
 ];

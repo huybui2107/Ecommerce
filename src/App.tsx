@@ -20,6 +20,7 @@ import { setBasket } from './app/store/basket/basketSlice'
 import Login from './features/account/Login'
 import Register from './features/account/Register'
 import { fetchCurrentUser } from './app/store/account/accountThunk'
+import Order from './features/orders/Order'
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           <Route path='/checkout' Component={CheckoutPage} />
           <Route path='/login' Component={Login} />
           <Route path='/register' Component={Register} />
+          <Route path='/orders' Component={Order} />
         </Routes>
       </Container>
 

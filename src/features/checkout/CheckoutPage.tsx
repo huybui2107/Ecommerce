@@ -23,6 +23,10 @@ import { FieldValue, FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup"
 import { validationSchema } from '../../app/validations/checkoutValidation';
 import { useState } from 'react';
+import agent from '../../app/api/agent';
+import { useAppDispatch } from '../../app/store/ConfigureStore';
+import { clearBasket } from '../../app/store/basket/basketSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -50,6 +54,7 @@ export default function CheckoutPage() {
     const [activeStep, setActiveStep] = useState(0);
     const [orderNumber, setOrderNumber] = useState(0);
     const [loading, setLoading] = useState(false);
+    const dispatch = useAppDispatch()
     const currentValidationSchema = validationSchema[activeStep];
     const methods = useForm({
         mode: 'all',
@@ -58,12 +63,26 @@ export default function CheckoutPage() {
 
     const checkoutTheme = createTheme(getCheckoutTheme('light'));
 
+    const navigate = useNavigate();
 
 
-
-    const handleNext = (data: FieldValue) => {
-        if (activeStep === 0) {
-            console.log(data)
+    const handleNext = async (data: FieldValue) => {
+        const { nameOnCard, saveAddress, ...shippingAddress } = data;
+        if (activeStep === steps.length - 1) {
+            setLoading(true);
+            try {
+                const orderNumber = await agent.Orders.create({
+                    saveAddress,
+                    shippingAddress
+                })
+                setOrderNumber(orderNumber);
+                setActiveStep(activeStep + 1);
+                dispatch(clearBasket());
+                setLoading(false);
+            } catch (error) {
+                console.log(error);
+                setLoading(false);
+            }
         }
         setActiveStep(activeStep + 1);
     };
@@ -205,7 +224,7 @@ export default function CheckoutPage() {
                                     <Typography variant="h5">Thank you for your order!</Typography>
                                     <Typography variant="body1" color="text.secondary">
                                         Your order number is
-                                        <strong>&nbsp;#140396</strong>. We have emailed your order
+                                        <strong>&nbsp;#{orderNumber}</strong>. We have emailed your order
                                         confirmation and will update you once its shipped.
                                     </Typography>
                                     <Button
@@ -214,6 +233,7 @@ export default function CheckoutPage() {
                                             alignSelf: 'start',
                                             width: { xs: '100%', sm: 'auto' },
                                         }}
+                                        onClick={() => navigate("/orders")}
                                     >
                                         Go to my orders
                                     </Button>
