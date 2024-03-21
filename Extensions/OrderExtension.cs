@@ -1,5 +1,6 @@
 ﻿using BE.Databases.Entities.OrderAggregate;
 using BE.DTOs;
+using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 
 namespace BE.Extensions
@@ -27,7 +28,8 @@ namespace BE.Extensions
                         Price = item.Price,
                         Quantity = item.Quantity,
                     }).ToList()
-                });
+                }).AsNoTracking();
+                ;
         }
     }
 }
