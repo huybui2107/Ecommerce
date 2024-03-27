@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E07hqcuka4dqjn8usTjMKi7+FXoMNNmkbomB8wSrEV4H4yu6EU/FuxMFpW7fAZsCCh7Vbdr+wKuy3gvhdkusng==",
+  "dgSpecHash": "GzZ9qlc0kT/7PP+iivaBvNhXoyqTrRvcw3MDg8VDIEjaj2ajtqmdrwbWSbIIw4JElR2DuxE+cqrFcZ1Lg7gnzA==",
   "success": true,
   "projectFilePath": "D:\\Project\\Ecommerce\\BE\\BE.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\Heaton\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
     "C:\\Users\\Heaton\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.3.1\\microsoft.identitymodel.tokens.7.3.1.nupkg.sha512",
     "C:\\Users\\Heaton\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Heaton\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Heaton\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Heaton\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
     "C:\\Users\\Heaton\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",

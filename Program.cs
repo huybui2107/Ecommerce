@@ -5,6 +5,7 @@ using BE.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
@@ -101,6 +102,18 @@ services.AddDbContext<DataContext>(options => options
 
 
 var app = builder.Build();
+var scope = app.Services.CreateScope();
+var serviceProvider = scope.ServiceProvider;
+try
+{
+    var dataContext = serviceProvider.GetRequiredService<DataContext>();
+    dataContext.Database.Migrate();
+}
+catch (System.Exception ex)
+{
+    var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
+    logger.LogError("Migration failed", ex.Message);
+}
 
 app.UseMiddleware<ExceptionMiddleware>();
 
